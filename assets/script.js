@@ -1,4 +1,4 @@
-//"(yesterdays close +divedend payouts)/(12/31 close * 1((1 +average monthly inflation)/(month index/12))))
+//"(yesterdays close + dividend payouts)/(12/31 close * 1((1 +average monthly inflation)/(month index/12))))
 var dOWPrice
 var sPPrice
 var nASDAQPrice
