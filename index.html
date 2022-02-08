@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>WARM Financial Tracker</title>
 </head>
 <body>
-    <nav class="mainNav">
-        <div>
-            <h1>WARM Financial Tracker</h1>
-        </div>
-        
-        <div>
-            <button>Search</button>
-        </div>
+    <header>
+        <nav class="mainNav">
+            <div>
+                <h1>WARM Financial Tracker</h1>
+            </div>
+            <div>
+                <button class="searchBtn"> Search</button>
+            </div>
+        </nav>
 
+        <aside class="favoritesAndSearch">
+            <div class="currentSearch">
+                <figure class="currentSelection">
+                <h2>This should reflect my current search.</h2>
+                </figure>
+            </div>
 
-    </nav>
+        <div class="stockFavorites">
+            <h2>This should reflect my current list of favorites</h2>
+        </div>
     
+        </aside>
+
+    </header>
+
+
+    <div class="mainContent">
+        <div class="globalMarkets">
+            <div>
+                <h2>S&P, DOW, NASDAQ</h2>
+            </div>
+
+        </div>
+
+        <div class="selectedFavorite">
+            <h2>My current favorite info.</h2>
+        </div>
+
+        
+
+    <div class="currencyData">
+        <div>
+            <h2>This should display currency exchange info.</h2>
+        </div>
+    </div>
+
+    <div class="inflationData">
+        <div>
+            <h2>This should show the inflation data API.</h2>
+        </div>
+
+    </div>
+
+
+    </div>
 </body>
 </html>
