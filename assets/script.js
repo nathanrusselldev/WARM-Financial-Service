@@ -1,60 +1,26 @@
-//"(yesterdays close +divedend payouts)/(12/31 close * 1((1 +average monthly inflation)/(month index/12))))
-var dOWPrice
-var sPPrice
-var nASDAQPrice
-var amazonPrice
-var fBPrice
-var pelePrice
-var nVDAPrice
-var applePrice
-var microSoftPrice
-var favPrice
-var euroPrice
-var yuanPrice
-var yenPrice
-var dOWChange
-var sPChange
-var nASDAQChange
-var amazonChange
-var fBChange
-var peleChange
-var nVDAChange
-var appleChange
-var microSoftChange
-var favChange
-var euroChange
-var yuanChange
-var yenChange
-var dOWPercentChange
-var sPPercentChange
-var nASDAQPercentChange
-var amazonPercentChange
-var fBPercentChange
-var pelePercentChange
-var nVDAPercentChange
-var applePercentChange
-var microSoftPercentChange
-var favPercentChange
-var euroPercentChange
-var yuanPercentChange
-var yenPercentChange
-var dOWVolume
-var sPVolume
-var nASDAQVolume
-var amazonVolume
-var fBVolume
-var peleVolume
-var nVDAVolume
-var appleVolume
-var microSoftVolume
-var favVolume
-var euroVolume
-var yuanVolume
-var yenVolume
-var amazonDividend
-var fBDividend
-var peleDividend
-var nVDADividend
-var appleDividend
-var microSoftDividend
-var favDividend
+
+var APIKey = "1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t"
+var oAuthKey = "TcwjOmmmh90TOj6RYjla3gtWFubb4oHXPqDxDbkU"
+var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search=couch&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius=80467"
+
+
+$(".searchButton").click(search)
+
+function search(event) {
+    console.log("this buttons works")
+    event.preventDefault()
+    fetch (testWebSite)
+        .then(function(response)
+        {console.log(response)
+        return response.json()
+})
+    .then(function(data){
+        console.log(data)
+        
+    $(".productImage").attr("src", data.posts[0].photos[0].url)
+    $(".Item").text(data.posts[0].content)
+
+    
+})
+
+}
