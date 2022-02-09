@@ -1,11 +1,4 @@
-# WARM-Financial-Service
-This is a group project that creates a favorite stock tracker that end users can interact with. 
+# WARM-Thrifting-Site
 
+As a group of developers we want to create a website that allows users to search for free or upcycled items around columbus, Ohio area. When they search for these items they should be presented with the current local weather as well as a list of items that denotes, how far they have to travel, what the item is, a picture of the item (if available) and a description. 
 
-
-As  a group of developers we want to create a website that allows users to track a group of favorited stocks.
-When a user selects a stock THEN
-the stock should appear in a pane in the main body of the page. THEN
-the user should be able to save this stock in a list of favorited stocks for later viewing. THEN
-when the user reloads the page they should be able to view this list.
-When the user loads the page they should be listed with market intraday prices for global stock market performance leaders.
