@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>WARM Financial Tracker</title>
 </head>
 <body>
     <header>
         <nav class="mainNav">
-            <div>
-                <h1>WARM Financial Tracker</h1>
-            </div>
-            <div>
-                <button class="searchBtn"> Search</button>
-            </div>
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle></button>
+                <div class="title-bar-title">Menu</div>
+              </div>
+              
+              <div class="top-bar" id="example-menu">
+                <div class="top-bar-left">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">Site Title</li>
+                    <li class="has-submenu">
+                      <a href="#0">One</a>
+                      <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#0">One</a></li>
+                        <li><a href="#0">Two</a></li>
+                        <li><a href="#0">Three</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#0">Two</a></li>
+                    <li><a href="#0">Three</a></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right">
+                  <ul class="menu">
+                    <li><input type="search" placeholder="Search"></li>
+                    <li><button type="button" class="button">Search</button></li>
+                  </ul>
+                </div>
+              </div>
         </nav>
 
         <aside class="favoritesAndSearch">
@@ -63,5 +86,7 @@
 
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
