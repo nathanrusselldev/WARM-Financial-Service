@@ -35,6 +35,11 @@ h4 {
     margin-left: 5px;
 }
 
+.Item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
 .margin {
     margin: 1rem;
 }
@@ -168,6 +173,7 @@ font-family: 'Roboto', sans-serif;*/
 
   .mainContent::-webkit-scrollbar-thumb {
     background: #888;
+    border-radius: 5px;
   }
 
   .mainContent::-webkit-scrollbar-thumb:hover {
