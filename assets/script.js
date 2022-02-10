@@ -56,3 +56,10 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998
 }
 $(".searchButton").click(search)
 displayWeather()
+
+// 
+
+const radiusFunction = () => {
+
+    document.getElementById("radiusButton").addEventListener("click", displayDate);
+}
