@@ -17,6 +17,10 @@ function search(event) {
     event.preventDefault()
     var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search="+ searchInput +"&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius=150000"
 
+
+
+
+
     fetch (testWebSite)
         .then(function(response)
         {console.log(response)
@@ -60,3 +64,10 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998
 }
 $(".searchButton").click(search)
 displayWeather()
+
+// 
+
+// const radiusFunction = () => {
+//     displayData = 
+//     document.getElementById("radiusButton").addEventListener("click", displayData);
+// }
