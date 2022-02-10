@@ -44,6 +44,7 @@ h2 {
     font-size: 3rem;
     text-align: center;
     vertical-align: text-top;
+    display:block;
 }
 
 h3 {
@@ -74,14 +75,15 @@ h3 {
     background-color: darkorange;
     color: rgb(14, 13, 13);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     border: solid whitesmoke 1px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 1rem;
     grid-column: 4 / 11;
     grid-row: 1 / 10;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 main {
@@ -103,6 +105,9 @@ main {
     border: solid 5px black;
     border-radius: 10px;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #grid {
@@ -119,10 +124,13 @@ main {
     border: solid whitesmoke 1px;
 }
 
-/*.scrollList {
-    overflow-x: hidden;
-    overflow-y: auto;
+.scrollList {
+    width: 100%;
+}
+
+p {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}*/
+    flex-shrink: inherit;
+    margin: 1rem;
+    margin-left: 5rem;
+}
