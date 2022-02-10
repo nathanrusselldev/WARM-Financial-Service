@@ -127,10 +127,3 @@ main {
 .scrollList {
     width: 100%;
 }
-
-p {
-    display: flex;
-    flex-shrink: inherit;
-    margin: 1rem;
-    margin-left: 5rem;
-}
