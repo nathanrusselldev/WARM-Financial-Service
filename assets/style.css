@@ -96,7 +96,17 @@ main {
     justify-content: space-between;
 }
 
-.weatherItem {
+.currentWeather {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.weatherTemp {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.weatherPrecip {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
