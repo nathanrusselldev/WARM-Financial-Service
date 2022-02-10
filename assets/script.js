@@ -7,7 +7,10 @@ var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3
 
 
 
+
 function search(event) {
+    var scrollList= $(".scrollList")
+    scrollList.empty()
     console.log("this buttons works")
     event.preventDefault()
     fetch (testWebSite)
@@ -17,10 +20,21 @@ function search(event) {
 })
     .then(function(data){
         console.log(data)
-        
-    $(".productImage").attr("src", data.posts[0].photos[0].url)
-    $(".Item").text(data.posts[0].content)
-
+     for(let i=0;  i<data.posts.length; i++  ) {   
+        if (data.posts[i] != null){
+        var productDiv= $("<div>")
+        productDiv.attr("class", "product margin")
+        var scrollList= $(".scrollList")
+        scrollList.append(productDiv)
+        var productImageMargin= $("<img>")
+        productImageMargin.attr("class","productImage margin")
+        productDiv.append(productImageMargin)     
+        productImageMargin.attr("src", data.posts[i].photos[0].url)
+        var pTag = $("<p>")
+        pTag.attr("class","Item margin")
+        productDiv.append(pTag)
+        pTag.text(data.posts[i].content)}
+     }
     
 })
 
