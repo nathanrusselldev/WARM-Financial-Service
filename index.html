@@ -4,50 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>WARM Trash to Treasure</title>
 </head>
 <body>
     <header>
-      <ul id="dropdown1" class="dropdown-content">
-        <li><button class = "waves-effect waves-light btn">25 MI</button></li>
-        <li class="divider"></li>
-        <li><button class = "waves-effect waves-light btn">50 MI</button></li>
-        <li class="divider"></li>
-        <li><button class = "waves-effect waves-light btn">100 MI</button></li>
-      </ul>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Trash to Treasure</a>
-          <!--<form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
+      <nav class="navbar customNav" role="navigation" aria-label="main navigation">
+          <h1 class="navbar-item">Trash to Treasure</h1>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable margin-left">
+              <a class="navbar-link navDrop">
+                Radius
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  25 MI
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  50 MI
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  100 MI
+                </a>
+              </div>
             </div>
-          </form>-->
-          <ul class="right hide-on-med-and-down">
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-          </ul>
+          </div>
+      
+          <div class="navbar-end margin">
+            <input class="input is-rounded margin-right" type="text" placeholder="Search">
+            <button class="button searchButton">Search</button>
+          </div>
         </div>
       </nav>
     </header>
-
-    <div class="maincontent d-flex col-9 justify-content-center">
-        <h2 class="Item">TEST CONTENT</h2>
-        <img src="#" alt="an image of the content" class="productImage">
-        <p class="itemDescriptors"></p>
-
+    
+    <div id="grid">
+      <aside class="margin weather">
+        <h3>Today's Weather:</h3>
+        <hr>
+        <ul class="weatherList">
+          <li class="weatherItem margin-y">Overcast:</li>
+          <li class="weatherItem margin-y">Temperature:</li>
+          <li class="weatherItem margin-y">Chance of Precipitation:</li>
+        </ul>
+      </aside>
+      
+      <main class="mainContent margin">
+        <h2>Your Future Treasure</h2>
+        <div class="scrollList">
+          <div class="product margin">
+            <div>
+              <img src="" alt="Item Up for Grabs" class="productImage margin">
+            </div>
+            <div>
+          <p class="Item margin">
+          </p>
+        </div>
+      </div>
+       <div class="product margin">
+        <div>
+         <img src="" alt="Item Up for Grabs" class="productImage margin">
+        </div>
+        <div>
+         <p class="Item margin">
+         </p>
+        </div>
+      </div>
+      <div class="product margin">
+        <div>
+         <img src="" alt="Item Up for Grabs" class="productImage margin">
+        </div>
+        <div>
+          <p class="Item margin">
+          </p>
+        </div>
+      </div>
     </div>
-
+    </main>
+      
 
         
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/js/materialize.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

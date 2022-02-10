@@ -1,4 +1,128 @@
-/*body *{
-    box-sizing: border-box;
-    border: 1px solid black;
+body {
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+}
+
+.customNav {
+    background-color: lightgray;
+    align-items: center;
+    display: fixed;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    border-radius: 0 0 10px 10px;
+    border-bottom: solid whitesmoke 2px;
+    color: rgb(14, 13, 13);
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.margin-y {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+/*font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    color: rgb(14, 13, 13);
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(14, 13, 13);
+}
+
+
+ .navDrop{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.weather {
+    background-color: darkorange;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 10;
+    border: solid whitesmoke 1px;
+    color: whitesmoke;
+}
+
+.mainContent {
+    background-color: darkorange;
+    color: rgb(14, 13, 13);
+    display: flex;
+    flex-flow: column wrap;
+    border: solid whitesmoke 1px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    grid-column: 4 / 11;
+    grid-row: 1 / 10;
+    overflow: hidden;
+}
+
+main {
+    justify-content: center;
+}
+
+.weatherList {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.weatherItem {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.product {
+    border: solid 5px black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  height: 90vh;
+}
+
+.searchButton {
+    background-color: darkorange;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    border: solid whitesmoke 1px;
+}
+
+/*.scrollList {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }*/
