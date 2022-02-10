@@ -3,35 +3,9 @@ body {
     overflow: hidden;
 }
 
-.customNav {
-    background-color: lightgray;
-    align-items: center;
-    display: fixed;
-    flex-flow: row wrap;
-    margin-bottom: 1rem;
-    border-radius: 0 0 10px 10px;
-    border-bottom: solid whitesmoke 2px;
-    color: rgb(14, 13, 13);
+main {
+    justify-content: center;
 }
-
-.margin {
-    margin: 1rem;
-}
-
-.margin-right {
-    margin-right: 1rem;
-}
-
-.margin-left {
-    margin-left: 1rem;
-}
-
-.margin-y {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-/*font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;*/
 
 h1 {
     font-family: 'Righteous', cursive;
@@ -54,8 +28,49 @@ h3 {
     color: rgb(14, 13, 13);
 }
 
+h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.75rem;
+    color: rgb(14, 13, 13);
+    margin-left: 5px;
+}
 
- .navDrop{
+.Item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.margin-right {
+    margin-right: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+.margin-y {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+/*font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+.customNav {
+    background-color: lightgray;
+    align-items: center;
+    display: fixed;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    border-radius: 0 0 10px 10px;
+    border-bottom: solid whitesmoke 2px;
+    color: rgb(14, 13, 13);
+}
+
+.navDrop{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
@@ -86,9 +101,6 @@ h3 {
     overflow-x: hidden;
 }
 
-main {
-    justify-content: center;
-}
 
 .weatherList {
     display: flex;
@@ -96,9 +108,22 @@ main {
     justify-content: space-between;
 }
 
-.weatherItem {
+.currentWeather {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    align-self: center;
+}
+
+.weatherTemp {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.weatherPrecip {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    align-self: center;
 }
 
 .product {
@@ -128,9 +153,29 @@ main {
     width: 100%;
 }
 
-p {
-    display: flex;
-    flex-shrink: inherit;
-    margin: 1rem;
-    margin-left: 5rem;
+.mainContent::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.mainContent::-webkit-scrollbar-track {
+    background: lightgray;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+.mainContent::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 10px;
 }
+
+.mainContent::-webkit-scrollbar-track-piece:end {
+    margin-top: 10px;
+}
+
+  .mainContent::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  .mainContent::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
