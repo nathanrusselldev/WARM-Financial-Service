@@ -24,6 +24,7 @@ function search(event) {
 })
     .then(function(data){
         console.log(data)
+        if (data.num_posts != 0){
      for(let i=0;  i<data.posts.length; i++  ) {   
         if (data.posts[i] != null){
         var productDiv= $("<div>")
@@ -38,7 +39,17 @@ function search(event) {
         pTag.attr("class","Item margin")
         productDiv.append(pTag)
         pTag.text(data.posts[i].content)}
-     }
+     }}
+     if (data.num_posts === 0)
+       {    var productDiv= $("<div>")
+       productDiv.attr("class", "product margin")
+       var scrollList= $(".scrollList")
+       scrollList.append(productDiv)
+       var pTag = $("<p>")
+       pTag.attr("class","Item margin")
+       productDiv.append(pTag)
+       pTag.text("No Results Found")
+       }
     
 })
 
