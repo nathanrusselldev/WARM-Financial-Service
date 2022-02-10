@@ -8,6 +8,7 @@ $(".searchButton").click(search)
 
 
 function search(event) {
+    var searchInput =document.getElementById("searchItem").value
     var scrollList= $(".scrollList")
     scrollList.empty()
     console.log("this buttons works")
@@ -38,3 +39,9 @@ function search(event) {
 })
 
 }
+
+
+//var WebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search=" +SearchInput+ " &types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius="+radius
+//var SearchInput
+//var radius 
+//radius = r *1607
