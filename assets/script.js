@@ -60,7 +60,7 @@ function search(event) {
 })
 
 }
-
+// Display Weather
 function displayWeather() {
 fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998795&units=imperial&appid=" +ownAPI)
     .then(function(weatherResponse) {
@@ -70,14 +70,18 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998
     .then(function(weatherData) {
     console.log(weatherData)
    
+
     $(".weatherTemp").text("Temperature " + weatherData.current.temp + "°")
-    $(".currentWeather").text(weatherData.current.weather[0].description)
+    $(".currentWeather").attr( "src", "http://openweathermap.org/img/wn/10d@2x.png")
     $(".weatherPrecip").text(weatherData.minutely[0].precipitation + "% chance of precipitation")
 })
 }
 $(".searchButton").click(search)
 $(".radiusInputBtn").click().value
 displayWeather()
+
+// let locationIcon = document.querySelector('.weather-icon');
+
 
 
 // 
