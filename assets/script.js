@@ -2,20 +2,22 @@
 var APIKey = "1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t"
 var ownAPI = "aefceef95152822709d653ad313d9efa"
 var oAuthKey = "TcwjOmmmh90TOj6RYjla3gtWFubb4oHXPqDxDbkU"
-//var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search="+searchInput+"&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius=80467"
+var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search="+searchInput+"&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius=80467"
 
 
 
 
 
 function search(event) {
-    var searchInput =document.getElementById("searchInput").value
+    var searchInput = document.getElementById("searchInput").value
+    var radiusInput = document.getElementById("radiusInputBtn").value
    console.log(searchInput)
+   console.log(radiusInput)
     var scrollList= $(".scrollList")
     scrollList.empty()
     console.log("this buttons works")
     event.preventDefault()
-    var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search="+ searchInput +"&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius=150000"
+    var testWebSite = "https://trashnothing.com/api/v1.2/posts/search?api_key=1UXuY3WPR1BOB2lzqLRluQjWJl1YCHEb08mn1e7t&search="+ searchInput +"&types=offer&sources=trashnothing&latitude=39.961178&longitude=-82.998795&radius="+ radiusInput;
 
 
 
@@ -74,11 +76,9 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998
 })
 }
 $(".searchButton").click(search)
+$(".radiusInputBtn").click().value
 displayWeather()
+
 
 // 
 
-// const radiusFunction = () => {
-//     displayData = 
-//     document.getElementById("radiusButton").addEventListener("click", displayData);
-// }
