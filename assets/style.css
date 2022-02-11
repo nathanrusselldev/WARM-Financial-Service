@@ -70,6 +70,33 @@ font-family: 'Roboto', sans-serif;*/
     color: rgb(14, 13, 13);
 }
 
+.customFoot {
+    
+    background-color: lightgray;
+    margin-top: 1rem;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid whitesmoke 2px;
+    color: rgb(14, 13, 13);
+
+}
+
+.customFoot h4 {
+    margin-bottom: 0;
+    
+}
+
+.footerCards {
+ 
+    padding: 0.25rem;
+    font-size: 22px;
+}
+
+.avatarImages {
+    width: 60px;
+    height: 60px;
+
+}
+
 .navDrop{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
