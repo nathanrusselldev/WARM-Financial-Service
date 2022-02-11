@@ -12,36 +12,44 @@
     <title>WARM Trash to Treasure</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar customNav" role="navigation" aria-label="main navigation">
-        <h1 class="navbar-item">Trash to Treasure</h1>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <div class="navbar-item has-dropdown is-hoverable margin-left">
-            <a class="navbar-link navDrop">
-              Radius
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                <button id="radiusButton" class="button">1 MI</button>
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                <button id="radiusButton" class="button">10 MI</button>
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                <button id="radiusButton" class="button">25 MI</button>
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                  <button id="radiusButton" class="button">50 MI</button>
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                  <button id="radiusButton" class="button">100 MI</button>
-              </a>
-            </div>
+    <header>
+      <nav class="navbar customNav" role="navigation" aria-label="main navigation">
+          <h1 class="navbar-item">Trash to Treasure</h1>
+        <div id="navbarBasicExample" class="navbar-menu">
+            
+            
+            
+<!-- radiusInputBtn -->
+            <select id = radiusInputBtn class="navbar-start navDrop navbar-link has-dropdown is-hoverable margin-left">
+                <option value=160934 class="navbar-item">
+                    Radius
+                  </option>
+                  <hr class="navbar-divider">
+                <option value=1609 class="navbar-item">
+                  1 MI
+                </option>
+                <hr class="navbar-divider">
+                <option value=16093 class="navbar-item">
+                    10 MI
+                  </option>
+                <hr class="navbar-divider">
+                <option value=40233 class="navbar-item">
+                    25 MI
+                  </option>
+                <hr class="navbar-divider">
+                <option value=80467 class="navbar-item">
+                    50 MI
+                  </option>
+                <hr class="navbar-divider">
+                <option value=160934 class="navbar-item">
+                    100 MI
+                  </option>
+            </select>
+        
+      
+          <div class="navbar-end margin">
+            <input class="input is-rounded margin-right" type="text" placeholder="Search" id="searchInput">
+            <button class="button searchButton">Search</button>
           </div>
         </div>
     
