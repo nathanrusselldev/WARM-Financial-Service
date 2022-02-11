@@ -11,6 +11,8 @@ h1 {
     font-family: 'Righteous', cursive;
     font-size: 4rem;
     color: rgb(14, 13, 13);
+    flex-shrink: 25;
+    padding: 10px;
 }
 
 h2 {
@@ -74,6 +76,24 @@ font-family: 'Roboto', sans-serif;*/
 .customEnd {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.customFoot h4 {
+    margin-bottom: 0;
+    
+}
+
+.footerCards {
+ 
+    padding: 0.25rem;
+    font-size: 22px;
+}
+
+.avatarImages {
+    width: 60px;
+    height: 60px;
 }
 
 .input {
@@ -83,11 +103,22 @@ font-family: 'Roboto', sans-serif;*/
 .radiusAndSearch {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 
 .navDrop{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    background-color: darkorange;
+    color: whitesmoke;
+    border: solid whitesmoke 1px;
+    border-radius: 10px;
+    max-height: 60px;
+}
+
+.navDrop:hover {
+    background-color: darkorange;
+    color: whitesmoke;
 }
 
 .weather {
@@ -121,24 +152,22 @@ font-family: 'Roboto', sans-serif;*/
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .currentWeather {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    align-self: center;
 }
 
 .weatherTemp {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    align-self: center;
 }
 
 .weatherPrecip {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    align-self: center;
 }
 
 .product {
@@ -146,8 +175,8 @@ font-family: 'Roboto', sans-serif;*/
     border-radius: 10px;
     background-color: whitesmoke;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 #grid {
@@ -173,7 +202,7 @@ font-family: 'Roboto', sans-serif;*/
   }
 
 .mainContent::-webkit-scrollbar-track {
-    background: lightgray;
+    background: transparent;
     margin: 10px;
     border-radius: 5px;
   }
@@ -195,7 +224,32 @@ font-family: 'Roboto', sans-serif;*/
     background: #888;
   }
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1460px) {
+    .product {
+        flex-flow: row wrap;
+    }
+  }
+
+  @media screen and (max-width: 1105px) {
+
+    h1 {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .radiusAndSearch {
+        justify-content: center;
+    }
+
+    .customEnd {
+        justify-content: center;
+    }
+
+    .customNav {
+        justify-content: center;
+    }
+
     .weather {
         grid-column: 1/11;
         grid-row: 1/3;
