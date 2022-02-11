@@ -7,51 +7,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="./assets/style.css">
     <title>WARM Trash to Treasure</title>
 </head>
 <body>
     <header>
-      <nav class="navbar customNav" role="navigation" aria-label="main navigation">
+      <nav class="customNav" role="navigation" aria-label="main navigation">
           <h1 class="navbar-item">Trash to Treasure</h1>
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <div class="navbar-item has-dropdown is-hoverable margin-left">
-              <a class="navbar-link navDrop">
-                Radius
-              </a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
+          <div id="navbarBasicExample" class="radiusAndSearch"> 
+<!-- radiusInputBtn -->
+            <select id = radiusInputBtn class="navbar-start navDrop navbar-link has-dropdown is-hoverable margin-left">
+                <option value=160934 class="navbar-item">
+                    Radius
+                  </option>
+                  <hr class="navbar-divider">
+                <option value=1609 class="navbar-item">
                   1 MI
-                </a>
+                </option>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  10 MI
-                </a>
+                <option value=16093 class="navbar-item">
+                    10 MI
+                  </option>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  25 MI
-                </a>
+                <option value=40233 class="navbar-item">
+                    25 MI
+                  </option>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  50 MI
-                </a>
+                <option value=80467 class="navbar-item">
+                    50 MI
+                  </option>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
-                  100 MI
-                </a>
-              </div>
-            </div>
-          </div>
+                <option value=160934 class="navbar-item">
+                    100 MI
+                  </option>
+            </select>
+        
       
           <div class="navbar-end margin">
             <input class="input is-rounded margin-right" type="text" placeholder="Search" id="searchInput">
             <button class="button searchButton">Search</button>
           </div>
         </div>
-      </nav>
-    </header>
+     </div>
+    </nav>
+  </header>
     
     <div id="grid">
       <aside class="margin weather">

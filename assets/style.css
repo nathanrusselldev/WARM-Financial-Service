@@ -62,13 +62,15 @@ font-family: 'Roboto', sans-serif;*/
 .customNav {
     background-color: lightgray;
     align-items: center;
-    display: fixed;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     margin-bottom: 1rem;
     border-radius: 0 0 10px 10px;
     border-bottom: solid whitesmoke 2px;
     color: rgb(14, 13, 13);
 }
+
 
 .customFoot {
     
@@ -94,6 +96,15 @@ font-family: 'Roboto', sans-serif;*/
 .avatarImages {
     width: 60px;
     height: 60px;
+
+
+.input {
+    max-width: 500px;
+}
+
+.radiusAndSearch {
+    display: flex;
+    flex-flow: row wrap;
 
 }
 
@@ -205,4 +216,10 @@ font-family: 'Roboto', sans-serif;*/
 
   .mainContent::-webkit-scrollbar-thumb:hover {
     background: #888;
+  }
+
+  @media screen and (max-width: 1020px) {
+      .navDrop {
+          display: flex;
+      }
   }
