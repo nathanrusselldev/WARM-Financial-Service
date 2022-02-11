@@ -70,9 +70,9 @@ fetch("https://api.openweathermap.org/data/2.5/onecall?lat=39.961178&lon=-82.998
     .then(function(weatherData) {
     console.log(weatherData)
    
-    $(".weatherTemp").text("Temperature " + weatherData.current.temp + "°")
+    $(".weatherTemp").text("Temperature: " + weatherData.current.temp + "°")
     $(".currentWeather").text(weatherData.current.weather[0].description)
-    $(".weatherPrecip").text(weatherData.minutely[0].precipitation + "% chance of precipitation")
+    $(".weatherPrecip").text(weatherData.minutely[0].precipitation + "% chance of precipitation.")
 })
 }
 $(".searchButton").click(search)
