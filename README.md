@@ -11,11 +11,11 @@ Trash to treasure is a site that allows users to search for free or upcycled ite
 
 ## Installation
 
-git pull from git@github.com:nathanrusselldev/WARM-Financial-Service.git
+git@github.com:nathanrusselldev/WARM-Trash-to-Treasure.git
 
 ## Links
 
-https://nathanrusselldev.github.io/WARM-Financial-Service/
+https://nathanrusselldev.github.io/WARM-Trash-to-Treasure/
 
 ## Usage
 
